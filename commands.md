@@ -29,9 +29,17 @@ Lists running containers on the host machine.
 
 Stops running container.
 
+```
+docker stop <container-id>
+```
+
 ### docker start
 
 Starts a stopped container.
+
+```
+docker start <container-id>
+```
 
 ### docker rm
 
