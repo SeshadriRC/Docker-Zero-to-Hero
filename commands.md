@@ -59,6 +59,7 @@ PS E:\ubuntu-data\docker> docker images
 IMAGE                           ID             DISK USAGE   CONTENT SIZE   EXTRA
 ubuntu:latest                   cd1dba651b30        119MB         31.7MB    U 
 
+# sesharc is my docker username having the latest tag
 PS E:\ubuntu-data\docker> docker tag ubuntu:latest sesharc/ubuntu:latest
 PS E:\ubuntu-data\docker> docker push sesharc/ubuntu:latest
 
