@@ -49,6 +49,23 @@ Downloads an image from the configured registry.
 
 Uploads an image to the configured registry.
 
+```bash
+# Below is the syntax
+docker tag <local-image> <dockerhub-username>/<repo-name>:<tag>
+
+# Outputs
+PS E:\ubuntu-data\docker> docker images
+                                                                                                                            i Info →   U  In Use
+IMAGE                           ID             DISK USAGE   CONTENT SIZE   EXTRA
+ubuntu:latest                   cd1dba651b30        119MB         31.7MB    U 
+
+PS E:\ubuntu-data\docker> docker tag ubuntu:latest sesharc/ubuntu:latest
+PS E:\ubuntu-data\docker> docker push sesharc/ubuntu:latest
+
+i Info → Not all multiplatform-content is present and only the available single-platform image was pushed
+
+```
+
 ### docker exec
 
 Run a command in a running container.
