@@ -15,6 +15,14 @@ docker commit mycontainer myimage:v1
 
 Lists docker images on the host machine.
 
+### docker inspect
+
+- Used to inspect the docker containers
+
+```
+docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' <container-name>
+```
+
 ### docker build
 
 Builds image from Dockerfile.
