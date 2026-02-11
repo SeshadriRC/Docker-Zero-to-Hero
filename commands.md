@@ -2,6 +2,13 @@
 
 Some of the most commonly used docker commands are 
 
+### docker commit
+
+```bash
+docker commit <container-name> <my-imagename:tag>
+docker commit mycontainer myimage:v1
+```
+
 ### docker images
 
 Lists docker images on the host machine.
