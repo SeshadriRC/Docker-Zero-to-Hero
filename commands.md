@@ -4,6 +4,8 @@ Some of the most commonly used docker commands are
 
 ### docker commit
 
+- Creat a image from the existing container
+
 ```bash
 docker commit <container-name> <my-imagename:tag>
 docker commit mycontainer myimage:v1
