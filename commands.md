@@ -2,6 +2,17 @@
 
 Some of the most commonly used docker commands are 
 
+### docker info
+
+- used to check currently logged in user in docker cli
+
+```bash
+docker info | grep Username
+
+root@ip-172-31-8-173:~/Docker-Zero-to-Hero/examples/first-docker-file# docker info | grep Username
+Username: sesharc
+```
+
 ### docker commit
 
 - Creat a image from the existing container
