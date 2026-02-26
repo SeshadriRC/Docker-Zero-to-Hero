@@ -125,7 +125,7 @@ docker rm $(docker ps -aq -f status=exited -f status=created)
 # preview what will get deleted
 docker image ls -f dangling=true
 
-# it will remove only untagged images
+# it will remove only unused image, which means no container is using this image
 docker image prune -a 
 
 # it will remove all the images
