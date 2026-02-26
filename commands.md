@@ -26,6 +26,7 @@ docker commit mycontainer myimage:v1
 
 Lists docker images on the host machine.
 
+
 ### docker inspect
 
 - Used to inspect the docker containers
@@ -110,3 +111,23 @@ Run a command in a running container.
 ### docker network
 
 Manage Docker networks such as creating and removing networks, and connecting containers to networks.
+
+### docker commands to cleanup images and containers
+
+```bash
+# Removes all stopped / exited / created containers, Does NOT touch running containers  Does NOT delete images, volumes, or networks
+docker container prune -f
+
+# Removes all stopped / exited / created containers
+docker rm $(docker ps -aq -f status=exited -f status=created)
+
+
+# preview what will get deleted
+docker image ls -f dangling=true
+
+# it will remove only untagged images
+docker image prune -a 
+
+# it will remove all the images
+docker rmi -f $(docker images -aq)
+```
