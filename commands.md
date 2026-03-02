@@ -128,6 +128,22 @@ docker run -d --name <container-name> --network secure-network nginx:latest
 docker run -d --name host-demo --network=host nginx:latest
 ```
 
+### docker volume
+[link](https://github.com/SeshadriRC/Docker-Zero-to-Hero/blob/main/volumes.md)
+```bash
+# List the volumes
+docker volume ls
+
+# Volume create
+docker volume create <volume_name>
+
+# Mount volume to a container
+docker run -it -v <volume_name>:/data <image_name> /bin/bash
+
+# Bind mount
+docker run -it -v <host_path>:<container_path> <image_name> /bin/bash
+```
+
 ### docker commands to cleanup images and containers
 
 ```bash
