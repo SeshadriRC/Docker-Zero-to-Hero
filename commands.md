@@ -112,6 +112,22 @@ Run a command in a running container.
 
 Manage Docker networks such as creating and removing networks, and connecting containers to networks.
 
+
+```bash
+# List the networks in docker
+docker network ls
+
+# Inspect
+docker inspect <container-name> (or) <vol-name> (or) <network-name>
+
+# Create network
+docker network create <network-name>
+
+# Attach the network to container
+docker run -d --name <container-name> --network secure-network nginx:latest
+docker run -d --name host-demo --network=host nginx:latest
+```
+
 ### docker commands to cleanup images and containers
 
 ```bash
