@@ -108,6 +108,11 @@ i Info → Not all multiplatform-content is present and only the available singl
 
 Run a command in a running container.
 
+```bash
+# Use in powershell
+docker exec -it aeb4f9137663 /bin/sh    
+```
+
 ### docker network
 
 [repo](https://github.com/SeshadriRC/Docker-Zero-to-Hero/blob/main/networking.md)
