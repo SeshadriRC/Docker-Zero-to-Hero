@@ -1,3 +1,5 @@
 1. [Container Concepts](https://github.com/SeshadriRC/Docker-Zero-to-Hero/tree/main)
-2. [Docker CMD vs Entrypoint](https://github.com/SeshadriRC/CKA-Certification-Course-2025/tree/main/Day%2004)
-3. [Dockerfiles](https://github.com/SeshadriRC/CKA-Certification-Course-2025/tree/main/Day%2005/Dockerfiles)
+2. [Docker Networking](https://github.com/SeshadriRC/Docker-Zero-to-Hero/blob/main/networking.md)
+3. [Docker Volumes](https://github.com/SeshadriRC/Docker-Zero-to-Hero/blob/main/volumes.md)
+4. [Docker CMD vs Entrypoint](https://github.com/SeshadriRC/CKA-Certification-Course-2025/tree/main/Day%2004)
+5. [Dockerfiles](https://github.com/SeshadriRC/CKA-Certification-Course-2025/tree/main/Day%2005/Dockerfiles)
